@@ -1,0 +1,180 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+a{
+    text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/** {*/
+/*    box-sizing: border-box;*/
+/*}*/
+
+/*============== My styles ==================*/
+
+a {
+    color: #000000;
+    /*color: #68747d; light-gray for links*/
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.head-logo{
+    font-size: 80px;
+    margin-top: 61px;
+}
+
+.logo-color{
+    color: #4bcaff;
+}
+
+.nav-pan-top{
+    margin-top: 40px;
+    display: inline-block;
+    background-color: #35444f;
+    width: 100%;
+    text-align: center;
+}
+
+.top-links{
+    font-size: 28px;
+    padding: 22px 40px;
+    display: inline-block;
+    color: white;
+    background-color: #35444f;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+
+.top-links:hover {
+    background-color: #222f3a;
+    border-color: #818181;
+}
+
+.main-list{
+    width: 350px;
+    display:inline-block;
+    margin-top: 50px;
+    border: 1px solid black;
+    vertical-align: top;
+}
+
+.list-links {
+    font-size: 28px;
+    padding: 28px;
+    display: block;
+    color: #485863;
+}
+
+.list-links:hover {
+    color: #000000;
+    background-color: #dbdbdb;
+    padding-left: 60px;
+}
+
+.main-content{
+    display: inline-block;
+    width: 924px;
+}
+
+.main-content > div {
+    border: 1px solid black;
+    display: inline-block;
+    padding:85px 275px;
+    margin: 50px 1px 50px 50px;
+}
+
+.main-img {
+    transition: transform .5s ease;
+}
+
+.main-img:hover{
+    transform: scale(1.25);
+}
+
+.main-text{
+    text-align: justify;
+    font-size: 20px;
+    padding: 0 30px 0 80px;
+}
+
+.footer{
+    display: inline-block;
+    background-color: #b4b7ba;
+    margin-top: 50px;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.footer li {
+    padding: 22px;
+    display: inline-block;
+}
+
+.foot-links{
+    font-size: 27px;
+
+    color: #0c1927;
+}
+
+.foot-links:hover{
+    color: #3181a6;
+    text-decoration: underline;
+}
+
+/*.margin-left-footer{*/
+/*    margin-left: 25px;*/
+/*}*/
+
+.copyright{
+    display: inline-block;
+    margin-left: 120px;
+    font-size: 27px;
+}
