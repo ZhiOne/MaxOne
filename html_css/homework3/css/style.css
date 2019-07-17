@@ -1,0 +1,148 @@
+
+/*.container{*/
+/*    width: 1366px;*/
+/*    margin: 0 auto;*/
+/*    background-image: url(../img/background.png);*/
+/*    background-size: cover;*/
+/*    background-repeat: no-repeat;*/
+/*}*/
+
+.blur{
+    background: rgba(0,0,0,0.5);
+    width: 1366px;
+    margin: 0 auto;
+    /*height: 700px;*/
+    padding: 50px 150px 20px 150px;
+    box-sizing: border-box;
+    font-family: 'Verdana', sans-serif;
+    color: white;
+}
+
+.bg-img{
+    width: 1366px;
+    margin: 0 auto;
+    background-image: url(../img/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo-img{
+    width: 46px; height: 44px;
+    background: url('../img/css_sprites.png') -0 -0;
+    float: left;
+}
+
+.logo-content{
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.milan-top{
+    font-size: 29px;
+    font-weight: bold;
+}
+
+.milan-bot{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.logo:hover .logo-img{
+    background: url('../img/css_sprites.png') -46px -0;
+}
+
+.logo:hover .logo-content {
+    color: #f26522;
+}
+
+.contacts{
+    font-size: 18px;
+    float: right;
+    text-align: right;
+}
+
+.main{
+    margin-top: 70px;
+}
+
+.box{
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 58px;
+
+}
+
+.left{
+    float: left;
+}
+
+.center{
+    margin: 0 70px 58px 70px;
+}
+
+
+.right {
+    float: right;
+}
+
+.img-container{
+    width: 307px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.box-footer{
+    font-size: 18px;
+    margin-top: 22px;
+    transition: 0.4s;
+}
+
+.footer{
+    font-size: 12px;
+    text-align: center;
+}
+
+.orange-price{
+    height: 63px;
+    background-color: #f26522;
+    position: relative;
+    top:0;
+    transition: 0.4s;
+}
+
+.box:hover .orange-price{
+    top: -63px;
+
+}
+
+.price{
+    margin-top: 16px;
+    font-size: 20px;
+    float:left;
+    margin-left: 21px;
+}
+
+.details{
+    font-size: 14px;
+    float: right;
+    margin-top: 35px;
+}
+
+.price:before{
+    content: 'from';
+    font-size: 10px;
+    display: block;
+    text-align: left;
+    margin-bottom: 4px;
+}
+
+.details:after{
+    content: '>';
+    display: inline-block;
+    margin-left: 15px;
+    margin-right: 18px;
+}
+
+.box:hover .box-footer{
+    color: #f26522;
+}
