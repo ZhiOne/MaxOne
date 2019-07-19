@@ -1,12 +1,4 @@
 
-/*.container{*/
-/*    width: 1366px;*/
-/*    margin: 0 auto;*/
-/*    background-image: url(../img/background.png);*/
-/*    background-size: cover;*/
-/*    background-repeat: no-repeat;*/
-/*}*/
-
 .blur{
     background: rgba(0,0,0,0.5);
     width: 1366px;
@@ -69,7 +61,6 @@
     display: inline-block;
     text-align: center;
     margin-bottom: 58px;
-
 }
 
 .left{
@@ -77,7 +68,7 @@
 }
 
 .center{
-    margin: 0 70px 58px 70px;
+    margin: 0 62px 58px 62px;
 }
 
 
@@ -86,7 +77,7 @@
 }
 
 .img-container{
-    width: 307px;
+    width: 310px;
     height: 200px;
     overflow: hidden;
 }
@@ -145,4 +136,12 @@
 
 .box:hover .box-footer{
     color: #f26522;
+}
+
+.img-container{
+    /*border: 4px;*/
+    /*border-style:solid;*/
+    /*border-image: linear-gradient(to top,black,white) 1 100%;*/
+    background: linear-gradient(to top, black, white);
+    padding: 2px;
 }
