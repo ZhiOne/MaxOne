@@ -1,0 +1,311 @@
+body {
+    font-family: 'Verdana',sans-serif;
+}
+
+button , input{
+    outline: none;
+}
+
+.bg-img{
+    background-image: url("../img/background.png");
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+.header{
+    height: 56px;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.container{
+    padding: 0 75px;
+}
+
+.logo{
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 22px;
+    display: inline-block;
+}
+
+.header-sign-in{
+    font-size: 14px;
+    margin-top: 23px;
+    display: inline-block;
+}
+
+.nav-pan{
+    float:right;
+    display: inline-block;
+}
+
+.logo-link{
+    display: inline-block;
+    transition: color 0.4s;
+}
+
+.logo-link:visited{
+    color: white;
+}
+
+.logo-link:hover{
+    color: #3cb878;
+}
+
+.header-icons{
+    display: inline-block;
+    padding-right: 25px;
+    border-right:1px solid #333333 ;
+    margin-right: 24px;
+
+}
+
+.header-icons  a{
+    background-image: url('../img/css_sprites.png');
+}
+
+.calc{
+    width: 19px; height: 19px;
+    background-position: 24px 175px;
+}
+
+.calc:hover{
+    background-position: 129px 26px;
+}
+
+.forum{
+    width: 28px; height: 20px;
+    background-position: 62px -5px;
+}
+
+.forum:hover {
+    background-position: 100px -5px;
+}
+
+.nav{
+    width: 20px; height: 20px;
+    background-position: -5px -35px ;
+
+}
+
+.nav:hover{
+    background-position: 175px -35px;
+}
+
+.header-icons > a{
+    display: inline-block;
+    margin: 0 14px;
+}
+
+.main{
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+
+.sign-up{
+    width: 444px;
+    height: 584px;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 15px;
+    padding: 30px 60px;
+}
+
+.sign-up-header > h3{
+    font-size: 20px;
+    display: inline-block;
+}
+
+.sign-up-header > a{
+    float: right;
+    color: #3cb878;
+}
+
+.sign-up::before{
+    content: '';
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    background-color: #3cb878;
+}
+
+.sign-up-action-bar{
+    margin-top: 15px;
+}
+
+.btn {
+    font-family: inherit;
+    font-size: 16px;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    position: relative;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+
+.btn::after {
+    content: '';
+    width: 1px;
+    height: 28px;
+    position: absolute;
+    left: 47px;
+    top: 9px;
+    background-color: rgba(51, 51, 51, 0.27);
+}
+
+.btn.facebook{
+    padding: 16px 16px 16px 66px;
+    margin-right: 8px;
+    background-color: #305db8;
+    background-image: url(../img/facebook-icon.png);
+    background-position: 20px 15px;
+    background-repeat: no-repeat;
+}
+
+.btn.facebook:hover{
+    background-color: #264b96;
+}
+
+.btn.google {
+    padding: 16px 25px 16px 72px;
+    background-color: #df4a32;
+    background-image: url(../img/google-icon.png);
+    background-position: 13px 17px;
+    background-repeat: no-repeat;
+}
+
+.btn.google:hover{
+    background-color: #c3412c;
+}
+
+.sign-up-divider {
+    margin-top: 37px;
+    height: 1px;
+    background-color: rgba(132, 132, 132, 255);
+    position: relative;
+}
+
+.sign-up-divider::after {
+    content: 'or';
+    font-size: 14px;
+    vertical-align: middle;
+    color: rgba(132, 132, 132, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 52px;
+    height: 25px;
+    background: white;
+    text-align: center;
+    transform: translate(-50%, -35%);
+}
+
+.sign-up-form > input {
+    font-size: 14px;
+    margin-top: 9px;
+    width: 100%;
+    padding: 14px 0 14px 18px;
+    border: 1px solid #eaeaea;
+    border-radius: 2px;
+    transition: all .2s ease-in-out;
+}
+
+.sign-up-form > input:focus:not(.submit-btn){
+    box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.2);
+    transform: translateY(-4px);
+}
+
+form{
+    margin-top: 21px;
+}
+
+input::placeholder{
+    color: rgba(190, 190, 190, 255);
+}
+
+.accept{
+    margin-top: 16px;
+}
+
+.agree{
+    margin-left: 13px;
+    vertical-align: middle;
+}
+
+input[type="checkbox"]{
+    border: 1px solid rgba(190, 190, 190, 255);
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    color: white;
+    vertical-align: middle;
+    background-image: url("../img/mark.png");
+    background-repeat: no-repeat;
+    background-position: 50% -150%;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked{
+    background-position: 50% 50%;
+    background-size: 14px 11px;
+}
+
+input[type="checkbox"]:focus {
+    border: 1px solid #3cb878;
+}
+
+ .sign-up-form .submit-btn{
+    font-size: 16px;
+    background-color: #3cb878;
+    color: white;
+    margin-top: 16px;
+}
+
+.submit-btn:hover, .submit-btn:focus{
+    background-color: #329a65;
+}
+
+.submit-btn:active {
+    transform: translateY(-2px) scale(.98);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.clearfix:after{
+    content: '';
+    display: inline-block;
+    clear: both;
+}
+
+.green-colour{
+    color: #3cb878;
+}
