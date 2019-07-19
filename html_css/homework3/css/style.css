@@ -49,9 +49,12 @@
 
 .contacts{
     font-size: 18px;
-    float: right;
     text-align: right;
+    display: inline-block;
+    float: right;
 }
+
+
 
 .main{
     margin-top: 70px;
