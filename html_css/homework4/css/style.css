@@ -49,6 +49,7 @@ button , input{
 .logo-link{
     display: inline-block;
     transition: color 0.4s;
+    color: white;
 }
 
 .logo-link:visited{
@@ -279,6 +280,7 @@ input[type="checkbox"]:focus {
 
 .submit-btn:hover, .submit-btn:focus{
     background-color: #329a65;
+    cursor: pointer;
 }
 
 .submit-btn:active {
