@@ -1,0 +1,164 @@
+
+
+.table{
+    width: 1192px;
+    height: 736px;
+    font-family: 'Arimo', sans-serif;
+}
+
+.main{
+    height: 680px;
+    width: 1140px;
+    border: 27px solid #3a4965 ;
+}
+
+table td ,table th {
+    box-shadow: 1px 0 0 #cfcfcf;
+    border-right: 2px solid #cfcfcf;
+    color: #484848;
+}
+
+
+table th ,tr {
+    vertical-align: middle;
+
+}
+
+.thead-plan{
+    width: 310px;
+    height: 156px;
+    background-color: #fafafa;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #484848;
+}
+
+.plan-name{
+    width: 277px;
+    height: 70px;
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+
+}
+
+.thead-plan-pricing-plan{
+    font-size: 30px;
+}
+
+.thead-plan-standard{
+    background-color: #89c331;
+}
+
+.thead-plan-ultimate{
+    background-color: #f04a56;
+}
+
+.thead-plan-premium{
+    background-color: #20807c;
+}
+.thead-plan-price{
+    width: 277px;
+    height: 86px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #484848;
+    background-color: #fafafa;
+}
+
+.price{
+    position: relative;
+}
+
+.price::before{
+    content: '$';
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.price::after{
+    content: '.99';
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    top: 4px;
+}
+
+.price-info{
+    font-size: 18px;
+}
+
+tbody tr ,td{
+    width: 277px;
+    height: 69px;
+    text-align: center;
+    border: none;
+    vertical-align: middle;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+tbody tr:nth-child(even){
+    background-color: #e3e3e3;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+tfoot button{
+    width: 192px;
+    height: 49px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    vertical-align: middle;
+    text-transform: uppercase;
+    border-radius: 9px;
+    border: none;
+    transition: 0.4s ease;
+
+}
+
+tfoot button:hover{
+    transition: 0.4s ease;
+    transform: scale(1.2);
+
+}
+
+tfoot td{
+    width: 277px;
+    height: 110px;
+    background-color: #f4f4f4;
+}
+
+.design-is-top{
+    background-color:#dddddd
+}
+
+.tfoot-contact-us-btn{
+    background-color: #484848;
+    box-shadow: 0 8px 0 #404040;
+}
+
+.tfoot-buy-standard-btn{
+    background-color: #89c331;
+    box-shadow: 0 8px 0 #79b027;
+}
+
+.tfoot-buy-ultimate-us-btn{
+    background-color: #f04a56;
+    box-shadow: 0 8px 0 #df3a46;
+
+}
+
+.tfoot-buy-premium-btn{
+    background-color: #20807c;
+    box-shadow: 0 8px 0 #16736f;
+}
+
+.fas ,.far {
+    margin-right: 14px;
+    color: #848484;
+}
