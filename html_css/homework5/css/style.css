@@ -124,6 +124,8 @@ tfoot button{
 tfoot button:hover{
     transition: 0.4s ease;
     transform: scale(1.2);
+    cursor: pointer;
+
 
 }
 
