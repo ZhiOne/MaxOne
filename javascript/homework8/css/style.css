@@ -1,0 +1,47 @@
+
+.focused{
+    outline: 4px solid greenyellow ;
+}
+
+.error{
+    margin-top: 10px;
+    outline: 4px solid red;
+    width: 200px;
+    height: 40px;
+    background-color: yellow;
+    color: red;
+    font-weight: bold;
+}
+
+.blur{
+    background-color: greenyellow;
+}
+
+.object{
+    display: flex;
+    min-width: 180px;
+    max-width: 200px;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+#button{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    color: red;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+#span{
+    display: flex;
+    margin-top: 10px;
+    min-width: 140px;
+    height: 20px;
+    color: lightseagreen;
+    border: 1px solid teal;
+    border-radius: 5px;
+    justify-content: center;
+}
