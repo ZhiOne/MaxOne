@@ -1,10 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>$Title$</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>homework12</title>
+	<style>
+		.image-to-show {
+			width: 400px;
+			height: 400px;
+			display: none;
+		}
+
+		.current-img {
+			border: 10px solid hotpink;
+			border-radius: 10px;
+			width: 1000px;
+			height: 600px;
+			margin: 50px auto;
+			display: flex;
+		}
+
+		.images-wrapper {
+
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+
+		.btn{
+			display: flex;
+			justify-content: center;
+			align-content: center;
+			width: 150px;
+			font-size: 35px;
+			font-weight: bold;
+			text-align: center;
+			color: hotpink;
+			background-color: aqua;
+			cursor: pointer;
+		}
+
+		.btn-wrapper{
+			display: flex;
+			margin: 0 auto;
+			width: 500px;
+			height: 130px;
+			background-color: hotpink;
+			border: 10px solid lightsalmon;
+			justify-content: space-evenly;
+			align-items: center;
+		}
+
+	</style>
 </head>
-<body>
-$END$
+<body style="background-color: aqua">
+<div class="images-wrapper">
+	<img src="./img/1.jpg" alt="image of game" class="image-to-show current-img" />
+	<img src="./img/2.jpg" alt="image of game" class="image-to-show" />
+	<img src="./img/3.JPG" alt="image of game" class="image-to-show" />
+	<img src="./img/4.png" alt="image of game" class="image-to-show" />
+</div>
+<script src="js/script.js"></script>
 </body>
 </html>
