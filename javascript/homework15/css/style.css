@@ -1,0 +1,457 @@
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header-top{
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    height: 70px;
+    background-color: #1d2124;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-bg{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    background-color:#1a1d20;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-logo{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 1s ease;
+}
+
+.header-logo + a{
+    font-size: 22px;
+    font-weight: bold;
+    margin-left:6px ;
+    cursor: pointer;
+}
+
+.logo-img{
+    background-image: url("../img/css_sprites.png");
+    width: 27px;
+    height: 27px;
+    background-position: -10px -54px;
+    background-repeat: no-repeat;
+    transition: 0.5s ease;
+}
+
+.logo-img:hover{
+    transition: all 1s ease;
+    transform: scale(1.5);
+}
+
+header nav {
+    width: 700px;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-search{
+    width: 68px;
+    background-color: #171a1c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 1s ease;
+}
+.header-search a{
+    transition: 0.4s ease;
+}
+
+.header-search a:hover{
+    transform: scale(1.3);
+    transition: 0.4s ease;
+}
+
+.search{
+    background-image: url("../img/css_sprites.png");
+    width: 17px;
+    height: 17px;
+    background-position: -68px -10px;
+    background-repeat: no-repeat;
+}
+
+.bg-top{
+    width: 100%;
+    height: 404px;
+    background-image: url("../img/header.jpeg");
+    background-attachment: fixed;
+    background-position-y: 135%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.bg-top p{
+    font-size: 27px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.bg-top-buttons{
+    width: 360px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bg-top button{
+    width: 170px;
+    height: 55px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition:  0.5s linear;
+}
+.bg-top button:hover{
+    transform: scale(1.15);
+    transition:  0.5s linear;
+    background-color: fuchsia;
+}
+
+.bg-top-content{
+    height: 120px ;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.subscribe-btn{
+    background-color: #89ca62;
+}
+
+.info-btn-top{
+    background-color: #14b9d5;
+}
+
+.popular-posts{
+    width: 100%;
+    height: 1030px;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.popular-posts-content{
+    height: 900px;
+    width: 1170px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.popular-posts-content p{
+    font-size: 18px;
+    font-weight: bold;
+    background-color:white;
+    text-align: center;
+    line-height: 26px;
+    padding: 20px;
+}
+
+.popular-posts-content div{
+    margin-bottom: 26px;
+}
+
+.bg-mid{
+    width: 100%;
+    height: 590px;
+    background-image: url("../img/parallax.jpeg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(4,220px);
+    grid-template-rows: repeat(3, 64px);
+    align-content: center;
+}
+
+.client-title{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.title-underline{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    height: 3px;
+    width: 60px;
+    background-color: #169cb4;
+    place-self: center;
+}
+
+
+.logo-place1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    place-self: center;
+}
+
+.logo-place2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    place-self: center;
+}
+
+.logo-place3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    place-self: center;
+}
+
+.logo-place4 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    place-self: center;
+}
+
+
+h2{
+    font-size: 27px;
+    font-weight: bold;
+    color: #18b4cf;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.gallery{
+    width: 100%;
+    height: 331px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.gallery  div {
+    height: 190px;
+    display: inline-grid;
+    grid-template-columns: repeat(7, 271px);
+    border: none;
+}
+
+.container{
+    width: 100%;
+    padding: 0 360px;
+}
+
+.hot-news{
+    width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(4 ,277px);
+    grid-template-rows: 259px repeat(2 ,418px) 259px ;
+    grid-column-gap: 15px;
+    grid-row-gap: 42px;
+}
+
+.hot-news h3{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.hot-news div{
+    background-color: #f9f7f7;
+}
+
+
+.hotel-prophecy ,.hotel-kings{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: right;
+    align-content: space-evenly;
+}
+
+.hotel-prophecy p ,.hotel-kings  p{
+    width: 320px;
+    height: 140px;
+    text-align: right;
+    font-size: 14px;
+}
+
+.hotel-nebula ,.hotel-prism{
+    display: flex;
+    width: 277px;
+    line-height: 27px;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+
+}
+
+.hotel-prophecy{
+    grid-column: 1/4;
+}
+
+.hotel-western,.hotel-wanderlust{
+    grid-column: 1/3;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+.hotel-grandmeadow,.hotel-twin{
+    grid-column: 3/5;
+}
+
+.hotel-kings{
+    grid-column: 2/5;
+}
+
+.hotel-western,.hotel-wanderlust,.hotel-twin,.hotel-grandmeadow{
+    width: 554px;
+    display: flex;
+    text-align: right;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+.hotel-western p,.hotel-wanderlust p,.hotel-twin p,.hotel-grandmeadow p{
+    width: 505px;
+    height: 77px;
+    font-size: 14px;
+}
+
+.hot-news-section{
+    height: 1629px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+footer{
+    width: 100vw;
+    height: 80px;
+    font-size: 13px;
+    color: white;
+    background-color: #1d2124;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+footer span{
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: 3px;
+}
+footer a{
+    width: 105px;
+    text-align: right;
+    display: flex;
+
+}
+
+.bot-logo{
+    background-image: url("../img/css_sprites.png");
+    width: 38px;
+    height: 24px;
+    background-position: -10px -10px;
+    background-repeat: no-repeat;
+}
+
+.active-slider-top{
+    transform: rotate(90deg);
+}
+
+.nav-menu-top{
+    position: absolute;
+    margin: 0;
+    background-color: black;
+    color: #ff4c7b;
+    font-size: 30px;
+    font-weight: bold;
+    width: 300px;
+    border: 5px solid #ff4c7b;
+    border-radius: 10px;
+}
+
+.nav-menu-items{
+    color: hotpink;
+    border: 1px solid hotpink;
+    border-radius: 5px;
+}
+
+
+.scroll-top-btn {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: aquamarine;
+    cursor: pointer;
+
+}
+
+.scroll-top-btn:focus {
+    outline: none
+}
+
+.show-news-btn{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin: 0 auto 30px auto;
+    width: 250px;
+    height: 50px;
+    background-color: aqua;
+    font-size: 15px;
+    color: hotpink;
+    font-weight: bold;
+    border: 5px solid hotpink;
+    border-radius: 10px;
+}
