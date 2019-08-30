@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,8 +6,10 @@
 	<title>Project HAM</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
+<body>
 <!--First section-->
 <section class="top-section">
 	<header >
@@ -19,14 +22,16 @@
 				<a href="#" class="header-li-items">HOME</a>
 				<a href="#" class="header-li-items">ABOUT</a>
 				<a href="#" class="header-li-items">SKILLS</a>
-				<a href="#" class="header-li-items">Service</a>
+				<a href="#" class="header-li-items">SERVICE</a>
 				<a href="#" class="header-li-items">WORK</a>
 				<a href="#" class="header-li-items">TESTIMONIALS</a>
 				<a href="#" class="header-li-items">BLOG</a>
 				<a href="#" class="header-li-items">TEAM</a>
 				<a href="#" class="header-li-items">CONTACT</a>
-				<a href="#" class="header-search"></a>
 			</nav>
+			<input type="text" class="input-slider" placeholder="Search" hidden>
+			<button class="find-btn-top" hidden>FIND</button>
+			<a href="#" class="header-search"></a>
 		</div>
 	</header>
 	<h3 >The Ham is <span>Wordpress theme</span></h3>
@@ -58,80 +63,461 @@
 </section>
 <!--Third section-->
 <h2 class="tittle">Our Services</h2>
-<ul class="tabs-service container-option">
-	<li class="tabs-names active-services-tab"  datatype="first">Web Design</li>
-	<li class="tabs-names" datatype="second">Graphic Design</li>
-	<li class="tabs-names" datatype="third">Online Support</li>
-	<li class="tabs-names" datatype="fourth">App Design</li>
-	<li class="tabs-names" datatype="fifth">Online Marketing</li>
-	<li class="tabs-names" datatype="sixth">Seo Service</li>
+<ul class="tabs-service ">
+	<li class="tabs-names active-services-tab arrow"  data-type="first">Web Design</li>
+	<li class="tabs-names" data-type="second">Graphic Design</li>
+	<li class="tabs-names" data-type="third">Online Support</li>
+	<li class="tabs-names" data-type="fourth">App Design</li>
+	<li class="tabs-names" data-type="fifth">Online Marketing</li>
+	<li class="tabs-names" data-type="sixth">Seo Service</li>
 </ul>
 <ul class="container-option">
-	<li class="service-content active-services-content" datatype="first" hidden>
+	<li class="service-content active-services-content" data-type="first" >
 		<img src="img/Our%20service%20img/img-1.png" alt="">
 		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam architecto, debitis doloribus eum exercitationem expedita inventore laudantium, libero magni optio quia quidem sunt ullam veniam veritatis? Ab aliquid consequuntur corporis, culpa cumque debitis dignissimos eaque facere fuga iure minima nobis omnis quaerat quam quibusdam quisquam quo rem repellendus rerum similique ut voluptate voluptatum! Aut consequuntur eaque eveniet laborum saepe. A aliquam asperiores dignissimos in maiores placeat porro possimus recusandae sequi vero. Itaque labore nulla perferendis quod voluptatum. Ad animi, aspernatur at aut beatae cum, cumque cupiditate debitis dolore doloremque ducimus earum enim fuga iure magni maiores maxime minima minus natus nobis non perspiciatis quam quas quod recusandae repellendus rerum sit tempora tenetur unde. Aperiam culpa dolor illo inventore maiores, modi mollitia perspiciatis? Ab beatae culpa, officiis quia quibusdam recusandae temporibus? At ducimus eligendi laudantium? Distinctio eum excepturi, laboriosam, necessitatibus nihil optio perspiciatis quas unde velit vitae voluptas voluptates? Accusamus accusantium aliquid cum deserunt dolore dolores earum error esse hic illo, impedit ipsam libero maxime quae ratione reprehenderit rerum, voluptatem voluptatibus! Alias architecto blanditiis, consequatur ducimus est, laborum modi officia omnis quaerat quia saepe similique veniam vitae! Beatae cum doloribus eius eum itaque nam natus, nemo provident recusandae rerum suscipit ut?</span>
 	</li>
-	<li class="service-content" datatype="second" hidden>
+	<li class="service-content" data-type="second" >
 		<img src="img/Our%20service%20img/img-2.png" alt="" >
 		<span>Lorem ipsum d olor sit amet, consectetur adipisicing elit. A adipisci aliquam amet architecto, beatae consequuntur dolorem error fuga id inventore iste laborum nesciunt nulla numquam omnis quos rerum veniam vero. Accusantium aliquid architecto aspernatur beatae consequuntur deleniti dolor ducimus est facilis fugit nostrum numquam odio possimus quod ratione sit, sunt totam voluptas? Accusantium aliquam, aut cupiditate distinctio eos error, eum ipsum labore nostrum provident qui quos rem repellendus, reprehenderit similique suscipit tempora vero? Amet, cupiditate doloremque earum facere in officia perferendis provident quam quis reiciendis sapiente, soluta suscipit veniam voluptas voluptates! A accusantium aliquid aspernatur dignissimos dolore eius enim error esse et eum ex explicabo facere fugit inventore ipsam iste iure, labore laboriosam magnam magni maxime minima minus molestiae mollitia necessitatibus neque nihil non, officiis porro quaerat qui quibusdam quos recusandae rem repudiandae sapiente voluptatum? Amet, aperiam architecto atque dolor id ipsa ipsam ipsum iure quas qui quibusdam quidem, quos repellendus reprehenderit sed similique soluta vitae? Blanditiis iure laborum nisi odio perspiciatis quaerat quia, reprehenderit sapiente! Asperiores culpa dolor, fugiat hic maiores minima nobis odit pariatur tempora voluptatem! Ad aliquam aperiam consectetur, dignissimos dolor error ex facilis hic illo libero minus modi nesciunt nisi, nobis nostrum quod repudiandae, rerum ullam.</span>
 	</li>
-	<li class="service-content" datatype="third" hidden>
+	<li class="service-content" data-type="third" >
 		<img src="img/Our%20service%20img/img-3.png" alt="" >
 		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aperiam cupiditate, dignissimos dolore doloremque eius eligendi fuga nemo quibusdam repellendus tenetur vitae voluptatum. Aliquid amet aspernatur blanditiis dolores fuga, maxime natus tempore tenetur totam? A aperiam cum deserunt dicta dignissimos ea hic illo incidunt itaque, magni maxime nemo neque nihil odio officia sequi totam unde veritatis voluptate, voluptatem. Ab assumenda consectetur consequuntur delectus enim expedita iusto libero maxime nam rem repellat saepe, sed tempora tenetur veritatis voluptas voluptates? Accusamus aspernatur harum id iusto nihil placeat quasi vitae, voluptate? Eos harum hic inventore ipsam modi nesciunt repudiandae voluptate! Illum iure iusto molestias totam voluptatibus! Aperiam atque debitis dolore explicabo nam, nobis quod? Accusantium consectetur culpa dicta distinctio, dolore, dolores eum exercitationem, laborum nemo nihil numquam odio quibusdam rem sit voluptatum. Accusantium cumque enim, excepturi incidunt itaque laboriosam modi porro quam quia repellendus veritatis voluptas. Delectus esse illum laborum nisi nobis, porro sed? A accusamus architecto excepturi ipsa itaque odio qui quibusdam. Aliquam harum ipsum iusto magnam, praesentium ut vel. A, aliquid consequuntur, cumque fugiat incidunt nesciunt nisi nobis quibusdam soluta suscipit tempora ullam! Alias debitis dolor dolorum id in incidunt nesciunt omnis perferendis qui vitae. Adipisci eius exercitationem mollitia quis similique.</span>
 	</li>
-	<li class="service-content" datatype="fourth" hidden>
+	<li class="service-content" data-type="fourth" >
 		<img src="img/Our%20service%20img/img-4.png" alt="">
 		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus deserunt eveniet excepturi facilis harum iste laborum modi officia possimus, provident, quod tempora vitae voluptate. Alias blanditiis cum cupiditate earum ex, excepturi impedit ipsam libero nemo neque nisi nulla praesentium quasi rerum saepe similique, voluptates voluptatum! Aliquam beatae, excepturi maiores porro provident vero voluptas? A alias aliquid architecto atque ea, est fuga minima possimus qui recusandae sequi tenetur, velit. At atque ducimus exercitationem laborum mollitia totam? Ad adipisci animi cumque deleniti dolorum exercitationem maxime odio officia? Dicta, ex inventore iure libero natus nisi optio possimus quos. Asperiores aut commodi dolores error pariatur praesentium, sint tenetur. Ab animi architecto atque aut cumque cupiditate debitis deserunt doloribus ea exercitationem expedita facilis harum incidunt iure laudantium minus natus, nihil nulla pariatur provident quas quasi quibusdam reiciendis saepe sapiente soluta, sunt tempora tenetur vel, voluptates. Beatae dignissimos esse libero possimus praesentium quaerat tenetur voluptates voluptatibus. Aspernatur eum excepturi impedit, laboriosam magnam maxime molestiae nesciunt quas quis quo repellat repellendus sed, unde voluptatem voluptatibus. Aspernatur, corporis fugiat impedit neque ratione tenetur. Beatae cumque deserunt dignissimos ducimus error et eum eveniet explicabo id in incidunt ipsa magnam minima nam obcaecati odit, officiis porro quibusdam, quis, tempore vero?</span>
 	</li>
-	<li class="service-content" datatype="fifth" hidden>
+	<li class="service-content" data-type="fifth" >
 		<img src="img/Our%20service%20img/img-5.png" alt="">
 		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur esse impedit, nobis non odio quaerat quasi quo sapiente sit voluptates! Aspernatur beatae commodi consectetur deleniti doloremque ea eum explicabo laudantium libero minima nemo nesciunt, porro, quam quis sint soluta unde voluptatibus! Aliquam aperiam, architecto asperiores at delectus eaque est explicabo inventore nesciunt nihil officia omnis perspiciatis placeat possimus quis quo quod quos rem repellat, tempora ullam vel voluptas. Animi asperiores beatae blanditiis commodi cupiditate deleniti dolore dolores error est expedita, explicabo facilis fugit hic illo illum ipsa modi molestiae nam nihil nisi non nulla obcaecati odio officiis placeat provident quam rem similique, ullam vero. Alias aliquid aspernatur at autem corporis cum dignissimos doloremque eligendi esse explicabo, facilis fugiat in incidunt iste itaque iure magnam, minima minus molestiae nam natus nobis non nulla officiis rem repellendus rerum saepe sint unde vel! Beatae dolorem, dolorum facere hic incidunt perspiciatis recusandae saepe sed soluta tempore? Ad aliquid amet atque corporis dolor dolorem doloribus est eum facilis, laudantium magni, maiores, maxime officia omnis provident ratione sunt voluptatem! Corporis cumque distinctio dolore dolores earum, placeat reprehenderit sed tempora. At, autem doloremque ducimus eum expedita ipsa itaque minima modi nesciunt nisi qui sit suscipit, totam, vel?</span>
 	</li>
-	<li class="service-content" datatype="sixth" hidden>
+	<li class="service-content" data-type="sixth" >
 		<img src="img/Our%20service%20img/img-6.jpg" alt="" >
 		<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad animi commodi dolorum eum illum iste itaque labore minima minus nisi perspiciatis, porro quam quas quidem tempora voluptatum. Eaque magni nostrum placeat quo unde! Eos error fuga iste maxime porro provident, ratione? Dignissimos, doloribus error esse facere itaque laboriosam maiores nisi non odio perspiciatis, recusandae rerum suscipit veniam? Distinctio eius est expedita, itaque obcaecati quo quod? Cupiditate delectus doloremque explicabo nemo officiis optio sunt. Aliquam amet aut beatae consectetur, corporis delectus dolor doloribus ducimus fugit incidunt ipsa iure libero magni molestiae molestias mollitia nesciunt pariatur quaerat quasi quibusdam quo reiciendis, repellendus, reprehenderit sapiente tempore totam vel veniam veritatis vero voluptas. A accusantium assumenda blanditiis deleniti dignissimos dolorum ea eius eum fugiat impedit incidunt ipsa laudantium maxime minima modi nam officiis omnis provident quidem quo saepe suscipit totam ut veniam vero vitae, voluptate voluptatum. A accusamus adipisci amet, animi assumenda beatae, consectetur cum dolore eligendi impedit ipsa iste minima molestias non, nostrum provident quae quam quas qui quos sint tempore vitae voluptates. Alias aliquid amet consectetur consequuntur debitis deleniti dicta dolor, ducimus exercitationem expedita facilis fuga in itaque natus necessitatibus nisi nobis obcaecati officiis quibusdam quo quod rem tempora unde voluptate?</span>
 	</li>
-</ul>
+	</ul>
+</section>
 <!--Fourth section-->
 <section class="purchase-bg">
 	<div>
-	<h2>Everything is ready. just buy and install now</h2>
-	<p>Smooth reliable, responsive ready, perfect portfolio, unique blog layout and many many options for you</p>
-	<button>purchase now</button>
+		<h2>Everything is ready. just buy and install now</h2>
+		<p>Smooth reliable, responsive ready, perfect portfolio, unique blog layout and many many options for you</p>
+		<button>purchase now</button>
 	</div>
 </section>
 <!--Fifth section-->
 <section class="bg-color">
-<section class="container-amazing-work">
-	<h2 class="tittle-our-amazing-work">Our Amazing Work</h2>
-	<ul class="amazing-work-tabs">
-		<li>All</li>
-		<li>Graphic Design</li>
-		<li>Web Design</li>
-		<li>Landing Pages</li>
-		<li>Wordpress</li>
-	</ul>
+	<section class="container-amazing-work">
+		<h2 class="tittle-our-amazing-work">Our Amazing Work</h2>
+		<ul class="amazing-work-tabs">
+			<li class="active-filter filter" data-theme="all">All</li>
+			<li class="filter" data-theme="Graphic">Graphic Design</li>
+			<li class="filter" data-theme="Web">Web Design</li>
+			<li class="filter" data-theme="Landing">Landing Pages</li>
+			<li class="filter" data-theme="Wordpress">Wordpress</li>
+		</ul>
 
-	<section class="content-wrapper">
-		<div >
-			<img src="img/graphic%20design/graphic-design6.jpg" alt="Web design">
-			<p>creative design</p>
-			<span>Web Design</span>
-		</div>
-		<div><img src="img/web%20design/img-8.png" alt="Presentation"></div>
-		<div><img src="img/wordpress/wordpress-11.png" alt="Megapack"></div>
-		<div><img src="img/graphic%20design/graphic-design1.jpg" alt="Umbrella"></div>
-		<div><img src="img/landing%20page/landing-8.png" alt="Ice-cream"></div>
-		<div><img src="img/web%20design/img-9.png" alt="Little-work-items"></div>
-		<div><img src="img/wordpress/img-12.png" alt="Two Boxes"></div>
-		<div><img src="img/graphic%20design/graphic-design2.jpg" alt="Rainbow of the stars"></div>
-		<div><img src="img/landing%20page/landing-9.png" alt="Magazine"></div>
-		<div><img src="img/wordpress/wordpress1.jpg" alt="Section Media on phone"></div>
-		<div><img src="img/landing%20page/landing-10.png" alt="Two little black boxes"></div>
-		<div><img src="img/graphic%20design/graphic-design3.jpg" alt="A cup on the colorful table"></div>
-		<button><span>+</span>Load More</button>
+		<section class="content-wrapper">
+			<div class="img-wrapper all" data-theme="Graphic">
+				<div >
+					<img src="img/graphic%20design/graphic-design1.jpg" alt="Web design">
+				</div>
+				<div class="pop-up-img">
+					<a href="#" class="hover-circles chain"><i class="fas fa-link"></i></a>
+					<a href="#" class="hover-circles"><i class="fas fa-search"></i></a>
+					<p>creative design</p>
+					<span>Graphic design</span>
+				</div>
+			</div>
+			<div class="img-wrapper all" data-theme="Wordpress">
+				<div >
+					<img src="img/wordpress/wordpress1.jpg" alt="Web design">
+				</div>
+				<div class="pop-up-img">
+					<a href="#" class="hover-circles chain"><i class="fas fa-link"></i></a>
+					<a href="#" class="hover-circles"><i class="fas fa-search"></i></a>
+					<p>creative design</p>
+					<span>Wordpress</span>
+				</div>
+			</div>
+			<div class="img-wrapper all" data-theme="Graphic">
+				<div >
+					<img src="img/graphic%20design/graphic-design2.jpg" alt="Web design">
+				</div>
+				<div class="pop-up-img">
+					<a href="#" class="hover-circles chain"><i class="fas fa-link"></i></a>
+					<a href="#" class="hover-circles"><i class="fas fa-search"></i></a>
+					<p>creative design</p>
+					<span>Graphic design</span>
+				</div>
+			</div>
+			<div class="img-wrapper all" data-theme="Web">
+				<div >
+					<img src="img/web%20design/web-design-1.png" alt="Web design">
+				</div>
+				<div class="pop-up-img">
+					<a href="#" class="hover-circles chain"><i class="fas fa-link"></i></a>
+					<a href="#" class="hover-circles"><i class="fas fa-search"></i></a>
+					<p>creative design</p>
+					<span>Web design</span>
+				</div>
+			</div>
+			<div class="img-wrapper all" data-theme="Landing">
+				<div >
+					<img src="img/landing%20page/landing-page1.jpg" alt="Web design">
+				</div>
+				<div class="pop-up-img">
+					<a href="#" class="hover-circles chain"><i class="fas fa-link"></i></a>
+					<a href="#" class="hover-circles"><i class="fas fa-search"></i></a>
+					<p>creative design</p>
+					<span>Landing pages</span>
+				</div>
+			</div>
+			<div class="img-wrapper all" data-theme="Web">
+				<div >
+					<img src="img/web%20design/web-design-2.jpg" alt="Web design">
+				</div>
+				<div class="pop-up-img">
+					<a href="#" class="hover-circles chain"><i class="fas fa-link"></i></a>
+					<a href="#" class="hover-circles"><i class="fas fa-search"></i></a>
+					<p>creative design</p>
+					<span>Web Design</span>
+				</div>
+			</div>
+			<div class="img-wrapper all" data-theme="Wordpress">
+				<div >
+					<img src="img/wordpress/wordpress2.jpg" alt="Web design">
+				</div>
+				<div class="pop-up-img">
+					<a href="#" class="hover-circles chain"><i class="fas fa-link"></i></a>
+					<a href="#" class="hover-circles"><i class="fas fa-search"></i></a>
+					<p>creative design</p>
+					<span>Wordpress</span>
+				</div>
+			</div>
+			<div class="img-wrapper all" data-theme="Graphic">
+				<div >
+					<img src="img/graphic%20design/graphic-design3.jpg" alt="Web design">
+				</div>
+				<div class="pop-up-img">
+					<a href="#" class="hover-circles chain"><i class="fas fa-link"></i></a>
+					<a href="#" class="hover-circles"><i class="fas fa-search"></i></a>
+					<p>creative design</p>
+					<span>Graphic design</span>
+				</div>
+			</div>
+			<div class="img-wrapper all" data-theme="Landing">
+				<div >
+					<img src="img/landing%20page/landing-page2.jpg" alt="Web design">
+				</div>
+				<div class="pop-up-img">
+					<a href="#" class="hover-circles chain"><i class="fas fa-link"></i></a>
+					<a href="#" class="hover-circles"><i class="fas fa-search"></i></a>
+					<p>creative design</p>
+					<span>Landing pages</span>
+				</div>
+			</div>
+			<div class="img-wrapper all" data-theme="Wordpress">
+				<div >
+					<img src="img/wordpress/wordpress3.jpg" alt="Web design">
+				</div>
+				<div class="pop-up-img">
+					<a href="#" class="hover-circles chain"><i class="fas fa-link"></i></a>
+					<a href="#" class="hover-circles"><i class="fas fa-search"></i></a>
+					<p>creative design</p>
+					<span>Wordpress</span>
+				</div>
+			</div>
+			<div class="img-wrapper all" data-theme="Landing">
+				<div >
+					<img src="img/landing%20page/landing-page3.jpg" alt="Web design">
+				</div>
+				<div class="pop-up-img">
+					<a href="#" class="hover-circles chain"><i class="fas fa-link"></i></a>
+					<a href="#" class="hover-circles"><i class="fas fa-search"></i></a>
+					<p>creative design</p>
+					<span>Landing pages</span>
+				</div>
+			</div>
+			<div class="img-wrapper all" data-theme="Web">
+				<div >
+					<img src="img/web%20design/web-design-3.jpg" alt="Web design">
+				</div>
+				<div class="pop-up-img">
+					<a href="#" class="hover-circles chain"><i class="fas fa-link"></i></a>
+					<a href="#" class="hover-circles"><i class="fas fa-search"></i></a>
+					<p>creative design</p>
+					<span>Web Design</span>
+				</div>
+			</div>
+			<div class="img-wrapper " hidden data-theme="Graphic">
+				<div >
+					<img src="img/graphic%20design/1.jpg" alt="Web design">
+				</div>
+				<div class="pop-up-img">
+					<a href="#" class="hover-circles chain"><i class="fas fa-link"></i></a>
+					<a href="#" class="hover-circles"><i class="fas fa-search"></i></a>
+					<p>creative design</p>
+					<span>Graphic design</span>
+				</div>
+			</div>
+			<div class="img-wrapper " hidden data-theme="Wordpress">
+				<div >
+					<img src="img/wordpress/4.jpg" alt="Web design">
+				</div>
+				<div class="pop-up-img">
+					<a href="#" class="hover-circles chain"><i class="fas fa-link"></i></a>
+					<a href="#" class="hover-circles"><i class="fas fa-search"></i></a>
+					<p>creative design</p>
+					<span>Wordpress</span>
+				</div>
+			</div>
+			<div class="img-wrapper " hidden data-theme="Graphic">
+				<div >
+					<img src="img/graphic%20design/5.jpg" alt="Web design">
+				</div>
+				<div class="pop-up-img">
+					<a href="#" class="hover-circles chain"><i class="fas fa-link"></i></a>
+					<a href="#" class="hover-circles"><i class="fas fa-search"></i></a>
+					<p>creative design</p>
+					<span>Graphic design</span>
+				</div>
+			</div>
+			<div class="img-wrapper " hidden data-theme="Web">
+				<div >
+					<img src="img/web%20design/2.jpg" alt="Web design">
+				</div>
+				<div class="pop-up-img">
+					<a href="#" class="hover-circles chain"><i class="fas fa-link"></i></a>
+					<a href="#" class="hover-circles"><i class="fas fa-search"></i></a>
+					<p>creative design</p>
+					<span>Web Design</span>
+				</div>
+			</div>
+			<div class="img-wrapper " hidden data-theme="Landing">
+				<div >
+					<img src="img/landing%20page/3.jpg" alt="Web design">
+				</div>
+				<div class="pop-up-img">
+					<a href="#" class="hover-circles chain"><i class="fas fa-link"></i></a>
+					<a href="#" class="hover-circles"><i class="fas fa-search"></i></a>
+					<p>creative design</p>
+					<span>Landing pages</span>
+				</div>
+			</div>
+			<div class="img-wrapper " hidden data-theme="Web">
+				<div >
+					<img src="img/web%20design/6.jpg" alt="Web design">
+				</div>
+				<div class="pop-up-img">
+					<a href="#" class="hover-circles chain"><i class="fas fa-link"></i></a>
+					<a href="#" class="hover-circles"><i class="fas fa-search"></i></a>
+					<p>creative design</p>
+					<span>Web Design</span>
+				</div>
+			</div>
+			<div class="img-wrapper " hidden data-theme="Wordpress">
+				<div >
+					<img src="img/wordpress/8.jpg" alt="Web design">
+				</div>
+				<div class="pop-up-img">
+					<a href="#" class="hover-circles chain"><i class="fas fa-link"></i></a>
+					<a href="#" class="hover-circles"><i class="fas fa-search"></i></a>
+					<p>creative design</p>
+					<span>Wordpress</span>
+				</div>
+			</div>
+			<div class="img-wrapper " hidden data-theme="Graphic">
+				<div >
+					<img src="img/graphic%20design/9.jpg" alt="Web design">
+				</div>
+				<div class="pop-up-img">
+					<a href="#" class="hover-circles chain"><i class="fas fa-link"></i></a>
+					<a href="#" class="hover-circles"><i class="fas fa-search"></i></a>
+					<p>creative design</p>
+					<span>Graphic design</span>
+				</div>
+			</div>
+			<div class="img-wrapper " hidden data-theme="Landing">
+				<div >
+					<img src="img/landing%20page/7.jpg" alt="Web design">
+				</div>
+				<div class="pop-up-img">
+					<a href="#" class="hover-circles chain"><i class="fas fa-link"></i></a>
+					<a href="#" class="hover-circles"><i class="fas fa-search"></i></a>
+					<p>creative design</p>
+					<span>Landing pages</span>
+				</div>
+			</div>
+			<div class="img-wrapper " hidden data-theme="Wordpress">
+				<div >
+					<img src="img/wordpress/12.jpg" alt="Web design">
+				</div>
+				<div class="pop-up-img">
+					<a href="#" class="hover-circles chain"><i class="fas fa-link"></i></a>
+					<a href="#" class="hover-circles"><i class="fas fa-search"></i></a>
+					<p>creative design</p>
+					<span>Wordpress</span>
+				</div>
+			</div>
+			<div class="img-wrapper " hidden data-theme="Landing">
+				<div >
+					<img src="img/landing%20page/11.jpg" alt="Web design">
+				</div>
+				<div class="pop-up-img">
+					<a href="#" class="hover-circles chain"><i class="fas fa-link"></i></a>
+					<a href="#" class="hover-circles"><i class="fas fa-search"></i></a>
+					<p>creative design</p>
+					<span>Landing pages</span>
+				</div>
+			</div>
+			<div class="img-wrapper " hidden data-theme="Web">
+				<div >
+					<img src="img/web%20design/10.jpg" alt="Web design">
+				</div>
+				<div class="pop-up-img">
+					<a href="#" class="hover-circles chain"><i class="fas fa-link"></i></a>
+					<a href="#" class="hover-circles"><i class="fas fa-search"></i></a>
+					<p>creative design</p>
+					<span>Web Design</span>
+				</div>
+			</div>
+			<div class="img-wrapper " hidden data-theme="Graphic">
+				<div >
+					<img src="img/graphic%20design/13.jpg" alt="Web design">
+				</div>
+				<div class="pop-up-img">
+					<a href="#" class="hover-circles chain"><i class="fas fa-link"></i></a>
+					<a href="#" class="hover-circles"><i class="fas fa-search"></i></a>
+					<p>creative design</p>
+					<span>Graphic design</span>
+				</div>
+			</div>
+			<div class="img-wrapper " hidden data-theme="Wordpress">
+				<div >
+					<img src="img/wordpress/16.jpg" alt="Web design">
+				</div>
+				<div class="pop-up-img">
+					<a href="#" class="hover-circles chain"><i class="fas fa-link"></i></a>
+					<a href="#" class="hover-circles"><i class="fas fa-search"></i></a>
+					<p>creative design</p>
+					<span>Wordpress</span>
+				</div>
+			</div>
+			<div class="img-wrapper " hidden data-theme="Graphic">
+				<div >
+					<img src="img/graphic%20design/17.jpg" alt="Web design">
+				</div>
+				<div class="pop-up-img">
+					<a href="#" class="hover-circles chain"><i class="fas fa-link"></i></a>
+					<a href="#" class="hover-circles"><i class="fas fa-search"></i></a>
+					<p>creative design</p>
+					<span>Graphic design</span>
+				</div>
+			</div>
+			<div class="img-wrapper " hidden data-theme="Web">
+				<div >
+					<img src="img/web%20design/14.jpg" alt="Web design">
+				</div>
+				<div class="pop-up-img">
+					<a href="#" class="hover-circles chain"><i class="fas fa-link"></i></a>
+					<a href="#" class="hover-circles"><i class="fas fa-search"></i></a>
+					<p>creative design</p>
+					<span>Web Design</span>
+				</div>
+			</div>
+			<div class="img-wrapper " hidden data-theme="Landing">
+				<div >
+					<img src="img/landing%20page/15.jpg" alt="Web design">
+				</div>
+				<div class="pop-up-img">
+					<a href="#" class="hover-circles chain"><i class="fas fa-link"></i></a>
+					<a href="#" class="hover-circles"><i class="fas fa-search"></i></a>
+					<p>creative design</p>
+					<span>Landing pages</span>
+				</div>
+			</div>
+			<div class="img-wrapper " hidden data-theme="Web">
+				<div >
+					<img src="img/web%20design/18.jpg" alt="Web design">
+				</div>
+				<div class="pop-up-img">
+					<a href="#" class="hover-circles chain"><i class="fas fa-link"></i></a>
+					<a href="#" class="hover-circles"><i class="fas fa-search"></i></a>
+					<p>creative design</p>
+					<span>Web Design</span>
+				</div>
+			</div>
+			<div class="img-wrapper " hidden data-theme="Wordpress">
+				<div >
+					<img src="img/wordpress/20.jpg" alt="Web design">
+				</div>
+				<div class="pop-up-img">
+					<a href="#" class="hover-circles chain"><i class="fas fa-link"></i></a>
+					<a href="#" class="hover-circles"><i class="fas fa-search"></i></a>
+					<p>creative design</p>
+					<span>Wordpress</span>
+				</div>
+			</div>
+			<div class="img-wrapper " hidden data-theme="Graphic">
+				<div >
+					<img src="img/graphic%20design/21.jpg" alt="Web design">
+				</div>
+				<div class="pop-up-img">
+					<a href="#" class="hover-circles chain"><i class="fas fa-link"></i></a>
+					<a href="#" class="hover-circles"><i class="fas fa-search"></i></a>
+					<p>creative design</p>
+					<span>Graphic design</span>
+				</div>
+			</div>
+			<div class="img-wrapper " hidden data-theme="Landing">
+				<div >
+					<img src="img/landing%20page/19.png" alt="Web design">
+				</div>
+				<div class="pop-up-img">
+					<a href="#" class="hover-circles chain"><i class="fas fa-link"></i></a>
+					<a href="#" class="hover-circles"><i class="fas fa-search"></i></a>
+					<p>creative design</p>
+					<span>Landing pages</span>
+				</div>
+			</div>
+			<div class="img-wrapper " hidden data-theme="Wordpress">
+				<div >
+					<img src="img/wordpress/24.jpg" alt="Web design">
+				</div>
+				<div class="pop-up-img">
+					<a href="#" class="hover-circles chain"><i class="fas fa-link"></i></a>
+					<a href="#" class="hover-circles"><i class="fas fa-search"></i></a>
+					<p>creative design</p>
+					<span>Wordpress</span>
+				</div>
+			</div>
+			<div class="img-wrapper " hidden data-theme="Landing">
+				<div >
+					<img src="img/landing%20page/23.png" alt="Web design">
+				</div>
+				<div class="pop-up-img">
+					<a href="#" class="hover-circles chain"><i class="fas fa-link"></i></a>
+					<a href="#" class="hover-circles"><i class="fas fa-search"></i></a>
+					<p>creative design</p>
+					<span>Landing pages</span>
+				</div>
+			</div>
+			<div class="img-wrapper " hidden data-theme="Web">
+				<div >
+					<img src="img/web%20design/22.png" alt="Web design">
+				</div>
+				<div class="pop-up-img">
+					<a href="#" class="hover-circles chain"><i class="fas fa-link"></i></a>
+					<a href="#" class="hover-circles"><i class="fas fa-search"></i></a>
+					<p>creative design</p>
+					<span>Web Design</span>
+				</div>
+			</div>
+		</section>
+		<button class="generate"><span>+</span>Load More</button>
 	</section>
-</section>
 	<hr>
 </section>
 <!--Sixth section-->
@@ -144,28 +530,44 @@
 				<span>Feb</span>
 			</div>
 			<img src="img/breaking%20news/br-1.png" alt="man with a camera">
-		</div>
-		<div class="item-text-wrapper">
-			<p>Amazing Image Post</p>
-			<span>By admin</span>
-			<span>|</span>
-			<span>2 comment</span>
-		</div>
-	</a>
-	<a href="">
-		<div class="item-wrapper">
-		<div class="calendar-item">
-			<span>12</span>
-			<span>Feb</span>
-		</div>
-		<img src="img/breaking%20news/br-2.png" alt="man with a camera">
-		</div>
+		</div >
+		<div class="item-second-part-wrapper">
 			<div class="item-text-wrapper">
 				<p>Amazing Blog Post</p>
 				<span>By admin</span>
 				<span>|</span>
 				<span>2 comment</span>
 			</div>
+		<div class="item-text-wrapper-active">
+			<p>Amazing Image Post</p>
+			<span>By admin</span>
+			<span>|</span>
+			<span>2 comment</span>
+		</div>
+		</div>
+	</a>
+	<a href="">
+		<div class="item-wrapper">
+			<div class="calendar-item">
+				<span>12</span>
+				<span>Feb</span>
+			</div>
+			<img src="img/breaking%20news/br-2.png" alt="man with a camera">
+		</div>
+		<div class="item-second-part-wrapper">
+			<div class="item-text-wrapper">
+				<p>Amazing Blog Post</p>
+				<span>By admin</span>
+				<span>|</span>
+				<span>2 comment</span>
+			</div>
+			<div class="item-text-wrapper-active">
+				<p>Amazing Image Post</p>
+				<span>By admin</span>
+				<span>|</span>
+				<span>2 comment</span>
+			</div>
+		</div>
 	</a>
 	<a href="">
 		<div class="item-wrapper">
@@ -175,11 +577,19 @@
 			</div>
 			<img src="img/breaking%20news/br-3.png" alt="man with a camera">
 		</div>
-		<div class="item-text-wrapper">
-			<p>Amazing Blog Post</p>
-			<span>By admin</span>
-			<span>|</span>
-			<span>2 comment</span>
+		<div class="item-second-part-wrapper">
+			<div class="item-text-wrapper">
+				<p>Amazing Blog Post</p>
+				<span>By admin</span>
+				<span>|</span>
+				<span>2 comment</span>
+			</div>
+			<div class="item-text-wrapper-active">
+				<p>Amazing Image Post</p>
+				<span>By admin</span>
+				<span>|</span>
+				<span>2 comment</span>
+			</div>
 		</div>
 	</a>
 	<a href="">
@@ -190,11 +600,19 @@
 			</div>
 			<img src="img/breaking%20news/br-4.png" alt="man with a camera">
 		</div>
-		<div class="item-text-wrapper">
-			<p>Amazing Blog Post</p>
-			<span>By admin</span>
-			<span>|</span>
-			<span>2 comment</span>
+		<div class="item-second-part-wrapper">
+			<div class="item-text-wrapper">
+				<p>Amazing Blog Post</p>
+				<span>By admin</span>
+				<span>|</span>
+				<span>2 comment</span>
+			</div>
+			<div class="item-text-wrapper-active">
+				<p>Amazing Image Post</p>
+				<span>By admin</span>
+				<span>|</span>
+				<span>2 comment</span>
+			</div>
 		</div>
 	</a>
 	<a href="">
@@ -205,11 +623,19 @@
 			</div>
 			<img src="img/breaking%20news/br-5.png" alt="man with a camera">
 		</div>
-		<div class="item-text-wrapper">
-			<p>Amazing Blog Post</p>
-			<span>By admin</span>
-			<span>|</span>
-			<span>2 comment</span>
+		<div class="item-second-part-wrapper">
+			<div class="item-text-wrapper">
+				<p>Amazing Blog Post</p>
+				<span>By admin</span>
+				<span>|</span>
+				<span>2 comment</span>
+			</div>
+			<div class="item-text-wrapper-active">
+				<p>Amazing Image Post</p>
+				<span>By admin</span>
+				<span>|</span>
+				<span>2 comment</span>
+			</div>
 		</div>
 	</a>
 	<a href="">
@@ -220,11 +646,19 @@
 			</div>
 			<img src="img/breaking%20news/br-6.png" alt="man with a camera">
 		</div>
-		<div class="item-text-wrapper">
-			<p>Amazing Blog Post</p>
-			<span>By admin</span>
-			<span>|</span>
-			<span>2 comment</span>
+		<div class="item-second-part-wrapper">
+			<div class="item-text-wrapper">
+				<p>Amazing Blog Post</p>
+				<span>By admin</span>
+				<span>|</span>
+				<span>2 comment</span>
+			</div>
+			<div class="item-text-wrapper-active">
+				<p>Amazing Image Post</p>
+				<span>By admin</span>
+				<span>|</span>
+				<span>2 comment</span>
+			</div>
 		</div>
 	</a>
 	<a href="">
@@ -235,11 +669,19 @@
 			</div>
 			<img src="img/breaking%20news/br-7.png" alt="man with a camera">
 		</div>
-		<div class="item-text-wrapper">
-			<p>Amazing Blog Post</p>
-			<span>By admin</span>
-			<span>|</span>
-			<span>2 comment</span>
+		<div class="item-second-part-wrapper">
+			<div class="item-text-wrapper">
+				<p>Amazing Blog Post</p>
+				<span>By admin</span>
+				<span>|</span>
+				<span>2 comment</span>
+			</div>
+			<div class="item-text-wrapper-active">
+				<p>Amazing Image Post</p>
+				<span>By admin</span>
+				<span>|</span>
+				<span>2 comment</span>
+			</div>
 		</div>
 	</a>
 	<a href="">
@@ -250,11 +692,19 @@
 			</div>
 			<img src="img/breaking%20news/br-8.png" alt="man with a camera">
 		</div>
-		<div class="item-text-wrapper">
-			<p>Amazing Blog Post</p>
-			<span>By admin</span>
-			<span>|</span>
-			<span>2 comment</span>
+		<div class="item-second-part-wrapper">
+			<div class="item-text-wrapper">
+				<p>Amazing Blog Post</p>
+				<span>By admin</span>
+				<span>|</span>
+				<span>2 comment</span>
+			</div>
+			<div class="item-text-wrapper-active">
+				<p>Amazing Image Post</p>
+				<span>By admin</span>
+				<span>|</span>
+				<span>2 comment</span>
+			</div>
 		</div>
 	</a>
 </section>
@@ -263,57 +713,66 @@
 	<div class="people-say-container">
 		<h2 class="tittle-people-say">What People Say About theHam</h2>
 		<span>&#10075;&#10075;</span>
-		<div hidden>
-			<p>Integer dignissim, augue tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis. Tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis.</p>
+		<div class="slide-wrapper-content">
+		<div class="people-say-content people-say-content-active" >
+			<p>It’s often the first stop in any user’s journey through a website or blog. It also shouldn’t be their last, because first impressions count online just as much as they do in the real world. If your visitors aren’t impressed, you can expect them to leave without reading your awesome content or completing a conversion action (e.g., signing up for your newsletter, making a purchase).</p>
 			<h5>Elizabeth Owkland</h5>
 			<span>HR</span>
 			<div>
-				<img src="img/faces/img-3.png" alt="Elizabeth Owkland HR">
+				<img  src="img/faces/img-1.png" alt="Elizabeth Owkland HR">
 			</div>
 		</div>
-		<div hidden>
-			<p>Integer dignissim, augue tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis. Tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis.</p>
+		<div  class="people-say-content" >
+			<p>The main purpose of your About Us page is to give visitors a glimpse into the identity of either a person or business. As users discover your brand, they need to distinguish what sets you apart and makes you… you. This often requires finding the right balance between compelling content and a design carefully planned to look the part. .</p>
 			<h5>Patrick Skvirt</h5>
 			<span>Project Manager</span>
 			<div>
 				<img src="img/faces/img-2.png" alt="Patrick Skvirt Project Manager">
 			</div>
 		</div>
-		<div class="active-face">
-			<p>Integer dignissim, augue tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis. Tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis.</p>
+		<div  class="people-say-content " >
+			<p>ToyFight is an award-winning creative design agency. You’ll find the About Page at the top of the menu under the Who section. This page has a unique feel, thanks to the deconstructed action figures representing the founders, Leigh Whipday and Jonny Lander. The great attention to detail and interactivity also reflect the company’s 16 years of experience.</p>
 			<h5>Hasan Ali</h5>
 			<span>UX Designer</span>
-<!--			<div>-->
+			<div>
 			<img src="img/faces/img-3.png" alt="Hasan Ali UX Designer">
-<!--			</div>-->
+			</div>
 		</div>
-		<div hidden>
-			<p>Integer dignissim, augue tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis. Tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa. Morbi pulvinar odio eget aliquam facilisis.</p>
+		<div  class="people-say-content" >
+			<p>Band is a multidisciplinary creative studio based in the Pacific Northwest. Their About Us page stands out because they used handwritten type. This adds a unique personal touch to the design. The clean, simple look and feel are what make this page one of our top picks.</p>
 			<h5>Mila Kashperovkiy</h5>
 			<span>Lawyer</span>
 			<div>
 				<img src="img/faces/img-4.png" alt="Mila Kashperovkiy Lawyer">
 			</div>
 		</div>
-		<ul>
-			<span><</span>
-			<li>
-				<img src="img/faces-slider/img-1.png" alt="Elizabeth Owkland HR">
-			</li>
-			<li>
-				<img src="img/faces-slider/img-2.png" alt="Patrick Skvirt Project Manager">
-			</li>
-			<li class="active-face">
-				<img src="img/faces-slider/img-3.png" alt="Hasan Ali UX Designer">
-			</li>
-			<li>
-				<img src="img/faces-slider/img-4.png" alt="Mila Kashperovkiy Lawyer">
-			</li>
-			<span>></span>
-		</ul>
+		</div>
+		<ul class="slider"	>
+				<button class="slider-btn-left" id="previous"><i class="fas fa-chevron-left"></i></button>
+				<li class="person-list  active-person" >
+					<img src="img/icons/viewer2.png"  alt="Elizabeth Owkland HR" >
+				</li >
+				<li class="person-list"  >
+					<img src="img/icons/viewer3.png" alt="Patrick Skvirt Project Manager" >
+				</li>
+				<li  class="person-list"   >
+					<img src="img/icons/viewer4.png" alt="Hasan Ali UX Designer">
+				</li>
+				<li class="person-list" >
+					<img  src="img/icons/viewer5.png" alt="Mila Kashperovkiy Lawyer">
+				</li>
+				<button class="slider-btn-right" id="next"><i class="fas fa-chevron-right"></i></button>
+			</ul>
 	</div>
 </section>
-<body>
+<!--Footer-->
+<footer>
+	<span>&copy;Copyright 2015&#8194;</span>
+	<span class="footer-label"> theHam &#8194;</span>
+	<span>| &#8194;</span>
+	<span>All Rights Reserved</span>
+</footer>
+<script src="js/jquery.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>
