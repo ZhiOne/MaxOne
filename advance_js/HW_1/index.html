@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>HW_1</title>
+</head>
+<body>
+<script>
+
+    function Hamburger(size, stuffing) {
+        try {
+            /*** Check for correct size ***/
+            if (!size) {
+                throw new HamburgerExceptions("Size is not given.");
+            } else if (!Object.keys(Hamburger.SIZES).includes(size)) {
+                throw new HamburgerExceptions(`Invalid size "${size}"`);
+            }
+            this._size = size;
+            /*** Check for correct stuffing ***/
+            if (!stuffing) {
+                throw new HamburgerExceptions("Stuffing is not given.");
+            } else if (!Object.keys(Hamburger.STUFFINGS).includes(stuffing)) {
+                throw new HamburgerExceptions(`Invalid stuffing "${stuffing}"`);
+            }
+            this._stuffing = stuffing;
+            this._topping = [];
+        } catch (e) {
+            console.error(`${e.name}: ${e.message}`);
+        }
+    }
+
+    Hamburger.SIZE_SMALL = 'SIZE_SMALL';
+    Hamburger.SIZE_LARGE = 'SIZE_LARGE';
+    Hamburger.SIZES = {
+        SIZE_SMALL: {
+            price: 50,
+            calories: 20
+        },
+        SIZE_LARGE: {
+            price: 100,
+            calories: 40
+        },
+    };
+    Hamburger.STUFFING_CHEESE = 'STUFFING_CHEESE';
+    Hamburger.STUFFING_SALAD = 'STUFFING_SALAD';
+    Hamburger.STUFFING_POTATO = 'STUFFING_POTATO';
+    Hamburger.STUFFINGS = {
+        STUFFING_CHEESE: {
+            price: 10,
+            calories: 20,
+        },
+        STUFFING_SALAD: {
+            price: 20,
+            calories: 5,
+        },
+        STUFFING_POTATO: {
+            price: 15,
+            calories: 10,
+        },
+    };
+    Hamburger.TOPPING_SPICE = 'TOPPING_SPICE';
+    Hamburger.TOPPING_MAYO = 'TOPPING_MAYO';
+    Hamburger.TOPPINGS = {
+        TOPPING_SPICE: {
+            price: 15,
+            calories: 0,
+        },
+        TOPPING_MAYO: {
+            price: 20,
+            calories: 5,
+        }
+    };
+
+    Hamburger.prototype.addTopping = function (topping) {
+        try {
+            /*** Check if topping is given ***/
+            if (!topping) {
+                throw new HamburgerExceptions('Topping is not given.');
+
+                /*** Check if topping exists ***/
+            } else if (!Object.keys(Hamburger.TOPPINGS).includes(topping)) {
+                throw new HamburgerExceptions(`Topping "${topping}" doesn't exist`);
+
+                /*** Check if topping is already added ***/
+            } else if (this._topping.includes(topping)) {
+                throw new HamburgerExceptions(`Topping "${topping}" has already been added`);
+            }
+            this._topping.push(topping);
+            console.log(`Topping "${topping}" is added`);
+        } catch (e) {
+            console.error(`${e.name}: ${e.message}`);
+        }
+    };
+
+    Hamburger.prototype.removeTopping = function (toppings) {
+        return this._topping = this._topping.filter(e => e == toppings);
+    };
+
+    Hamburger.prototype.getToppings = function () {
+        return this._topping;
+    };
+
+    Hamburger.prototype.getSize = function () {
+        return this._size;
+    };
+
+    Hamburger.prototype.getStuffing = function () {
+        return this._stuffing;
+    };
+
+    Hamburger.prototype.calculatePrice = function () {
+        var calcPrice = this._topping.map(e => Hamburger.TOPPINGS[e].price);
+        calcPrice.push(Hamburger.SIZES[this._size].price, Hamburger.STUFFINGS[this._stuffing].price);
+        return calcPrice.reduce((item, price) => item + price)
+    };
+
+    Hamburger.prototype.calculateCalories = function () {
+        var calcCalories = this._topping.map(e => Hamburger.TOPPINGS[e].calories);
+        calcCalories.push(Hamburger.SIZES[this._size].calories, Hamburger.STUFFINGS[this._stuffing].calories);
+        return calcCalories.reduce((item, price) => item + price)
+    };
+
+    function HamburgerExceptions (message) {
+        this.message = message;
+    }
+
+    var hamburger = new Hamburger(Hamburger.SIZE_SMALL, Hamburger.STUFFING_CHEESE);
+
+    hamburger.addTopping(Hamburger.TOPPING_MAYO);
+
+    console.log(hamburger.calculateCalories());
+
+    console.log( hamburger.calculatePrice());
+
+    hamburger.addTopping(Hamburger.TOPPING_SPICE);
+
+    console.log(hamburger.calculatePrice());
+
+    console.log( hamburger.getSize() === Hamburger.SIZE_LARGE);
+
+    hamburger.removeTopping(Hamburger.TOPPING_SPICE);
+
+    console.log(hamburger.getToppings().length);
+
+
+</script>
+</body>
+</html>
