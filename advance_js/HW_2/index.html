@@ -51,14 +51,14 @@
     class Hamburger {
         constructor(size, stuffing) {
             try {
-                /*** Check for correct size ***/
+
                 if (!size) {
                     throw new HamburgerExceptions("Size is not given.");
                 } else if (!Object.keys(SIZES).includes(size)) {
                     throw new HamburgerExceptions(`Invalid size "${size}"`);
                 }
                 this._size = size;
-                /*** Check for correct stuffing ***/
+
                 if (!stuffing) {
                     throw new HamburgerExceptions("Stuffing is not given.");
                 } else if (!Object.keys(STUFFINGS).includes(stuffing)) {
@@ -70,29 +70,29 @@
                 console.error(`${e.name}: ${e.message}`);
             }
         }
-        get Toppings() {
+        get toppings() {
             return this._topping;
         };
 
-        get Size() {
+        get size() {
             return this._size;
         };
 
-        get Stuffing() {
-            return this._stuffing;
+        get stuffing() {
+            return (STUFFINGS[this._stuffing].price);
         };
 
         addTopping(topping) {
             try {
-                /*** Check if topping is given ***/
+
                 if (!topping) {
                     throw new HamburgerExceptions('Topping is not given.');
 
-                    /*** Check if topping exists ***/
+
                 } else if (!Object.keys(TOPPINGS).includes(topping)) {
                     throw new HamburgerExceptions(`Topping "${topping}" doesn't exist`);
 
-                    /*** Check if topping is already added ***/
+
                 } else if (this._topping.includes(topping)) {
                     throw new HamburgerExceptions(`Topping "${topping}" has already been added`);
                 }
@@ -111,13 +111,13 @@
         calculatePrice() {
             const calcPrice = this._topping.map(e => TOPPINGS[e].price);
             calcPrice.push(SIZES[this._size].price, STUFFINGS[this._stuffing].price);
-            return calcPrice.reduce((item, price) => item + price)
+            return calcPrice.reduce((acc , currVal) => acc + currVal)
         };
 
         calculateCalories() {
             const calcCalories = this._topping.map(e => TOPPINGS[e].calories);
             calcCalories.push(SIZES[this._size].calories, STUFFINGS[this._stuffing].calories);
-            return calcCalories.reduce((item, price) => item + price)
+            return calcCalories.reduce((acc, currVal) => acc + currVal)
         };
 
     }
@@ -141,11 +141,13 @@
 
     console.log("Price with sauce: %f", hamburger.calculatePrice());
 
-    console.log("Is hamburger large: %s", hamburger.Size === SIZE_LARGE);
+    console.log("Is hamburger large: %s", hamburger.size === SIZE_LARGE);
 
     hamburger.removeTopping(TOPPING_SPICE);
 
-    console.log("Have %d toppings", hamburger.Toppings.length);
+    console.log("Have %d toppings", hamburger.toppings.length);
+
+    console.log(hamburger.stuffing);
 
 </script>
 </body>
