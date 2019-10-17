@@ -105,19 +105,19 @@
     };
 
     Hamburger.prototype.getStuffing = function () {
-        return this._stuffing;
+        return Hamburger.STUFFINGS[this._stuffing].price;
     };
 
     Hamburger.prototype.calculatePrice = function () {
         var calcPrice = this._topping.map(e => Hamburger.TOPPINGS[e].price);
         calcPrice.push(Hamburger.SIZES[this._size].price, Hamburger.STUFFINGS[this._stuffing].price);
-        return calcPrice.reduce((item, price) => item + price)
+        return calcPrice.reduce((acc, currVal) => acc + currVal);
     };
 
     Hamburger.prototype.calculateCalories = function () {
         var calcCalories = this._topping.map(e => Hamburger.TOPPINGS[e].calories);
         calcCalories.push(Hamburger.SIZES[this._size].calories, Hamburger.STUFFINGS[this._stuffing].calories);
-        return calcCalories.reduce((item, price) => item + price)
+        return calcCalories.reduce((acc , currVal) => acc + currVal);
     };
 
     function HamburgerExceptions (message) {
