@@ -1,0 +1,183 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/bgc.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    border: 3px solid #C5613A;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.title {
+    margin: 0;
+    font-weight: 600;
+    text-shadow: 1px 2px 1px black;
+    color: wheat;
+}
+
+.filter-btn {
+    margin-left: 65px;
+    padding: 7px 17px;
+    border-radius: 4px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    background-color: #431923;
+    color: wheat;
+    box-shadow: 0 1px 7px 0 white;
+    cursor: pointer;
+}
+
+.add-column {
+    margin-left: auto;
+    padding: 7px 17px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    background-color: #431923;
+    color: wheat;
+    box-shadow: 0 1px 7px 0 white;
+    cursor: pointer;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.wrapper-tasks {
+    margin: 2rem;
+    width: 20%;
+    height: 64vh;
+    box-sizing: border-box;
+    border: 2px solid #431923;
+    border-radius: 2px;
+    background-color: rgba(240, 230, 140, 0.8);
+}
+
+.add-btn {
+    display: inline-block;
+    margin-left: 32px;
+    margin-bottom: 22px;
+    padding: 10px 35px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    color: wheat;
+    background-color: #431923;
+    box-shadow: 0 1px 7px 0 white;
+    cursor: pointer;
+}
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    visibility: hidden;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: visibility 0s, opacity 0.5s;
+    z-index: 1;
+}
+
+.modal-title , .input-modal, #textarea, .choose-task{
+    margin-left: 10px;
+}
+
+
+.bg-active {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-content {
+    margin: auto;
+    position: relative;
+    width: 80%;
+    background-color: #fefefe;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+}
+
+.close-wrapper{
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #C5613A;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.close {
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-btn{
+    width: 100px;
+    padding: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px black solid;
+    color: #fefefe;
+    transition: ease-in .5s ;
+    margin-right: 7px;
+}
+
+.modal-btn:hover{
+    transform: scale(1.1);
+}
+
+#general{
+    background-color: deepskyblue;
+}
+
+#optional{
+    background-color: lightgreen;
+}
+
+#deadline{
+    background-color: crimson;
+}
+
+.card-body{
+    width: 70px;
+    height: 50px;
+    background-color:white;
+}
+
+.card-label{
+    width: 30px;
+    height: 10px;
+}

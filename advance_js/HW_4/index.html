@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Whack a mole.</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main></main>
+<div class="modal" id="myModal">
+    <div class="modal-content">
+		<div class="close-wrapper">
+			<span class="close">x</span>
+		</div>
+        <h3 class="modal-title">Enter your card title</h3>
+		<input type="text" class="input-modal" placeholder="Your title" maxlength="50">
+		<h4 class="modal-title">Enter your task</h4>
+        <textarea id="textarea"  maxlength="50" name="text" placeholder="Enter you're text" required></textarea>
+		<h4 class="modal-title">Choose type of task</h4>
+        <div class="choose-task">
+            <button id="general" class="modal-btn">General tasks</button>
+            <button id="optional" class="modal-btn">Optional tasks</button>
+            <button id="deadline" class="modal-btn">Deadline task</button>
+        </div>
+    </div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
